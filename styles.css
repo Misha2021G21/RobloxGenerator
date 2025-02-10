@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+h1, h2 {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+nav a {
+    color: #00ff00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 15px #ff00ff;
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 10px #00ff00);
+}
+
+.neon-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.animated-text {
+    font-size: 24px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+}

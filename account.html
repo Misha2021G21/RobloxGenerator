@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>👤 Your Account</h1>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="shop.html">🛒 Shop</a>
+            <a href="account.html">👤 Account</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Avatar</h2>
+        <img id="avatar" src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/4/7/6/4763f2830a9d8874370d38dcc41c74a2e5962700.png" alt="Avatar">
+        <p>Change your avatar URL:</p>
+        <input type="text" id="avatar-url" placeholder="Enter Image URL">
+        <button onclick="changeAvatar()">Update Avatar</button>
+    </main>
+    <script>
+        function changeAvatar() {
+            let url = document.getElementById("avatar-url").value;
+            document.getElementById("avatar").src = url;
+        }
+    </script>
+</body>
+</html>
